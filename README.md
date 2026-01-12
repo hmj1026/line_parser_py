@@ -9,3 +9,12 @@
     * 執行`docker run -it --rm -v "%cd%":/tmp parser python line_group_msg_to_csv.py`
     * 執行`docker run -it --rm -v "%cd%":/tmp parser python line_group_msg_stat_plot.py`
     * 執行`docker run -it --rm -v "%cd%":/tmp parser python line_group_msg_sna_plot.py`
+
+## 環境需求
+
+本專案 Docker 環境使用以下套件版本（由 `app/requirements.txt` 指定）：
+* matplotlib==3.10.8
+* networkx==3.6.1
+* pandas==2.3.3
+
+Dockerfile 已配置為自動偵測基礎映像檔的 Python 版本，並正確設定中文字型與 matplotlib 配置。
